@@ -3,7 +3,7 @@ import org.scalatest.{FunSuite, Matchers}
 /**
   * Created by inieto on 27/04/15.
   */
-class _17_ForExpressions extends FunSuite with Matchers {
+class _18_ForExpressions extends FunSuite with Matchers {
 
    test("For loops can be simple") {
      val someNumbers = Range(0, 10)
@@ -13,8 +13,7 @@ class _17_ForExpressions extends FunSuite with Matchers {
      sum should equal(45)
    }
 
-
-   test("For loops can contain additional logic:") {
+   test("For loops can contain additional logic") {
      val someNumbers = Range(0, 10)
      var sum = 0
      for (i <- someNumbers)
@@ -22,8 +21,7 @@ class _17_ForExpressions extends FunSuite with Matchers {
      sum should equal(20)
    }
 
-
-   test("For expressions can nest, with later generators varying more rapidly than earlier ones:") {
+   test("For expressions can nest, with later generators varying more rapidly than earlier ones") {
      val xValues = Range(1, 5)
      val yValues = Range(1, 3)
      val coordinates = for {

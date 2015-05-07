@@ -3,7 +3,7 @@ import org.scalatest.{FunSuite, Matchers}
 /**
   * Created by inieto on 27/04/15.
   */
-class _16_Traits extends FunSuite with Matchers {
+class _17_Traits extends FunSuite with Matchers {
 
   /* Similar to interfaces in Java, traits are used to define object types by specifying the signature of the supported methods.
      Unlike Java, Scala allows traits to be partially implemented; i.e. it is possible to define default implementations for some methods.
