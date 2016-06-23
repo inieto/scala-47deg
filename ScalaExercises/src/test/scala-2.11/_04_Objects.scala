@@ -93,7 +93,7 @@ class _04_Objects extends FunSuite with Matchers {
      Person.showMeInnerSecret(diana) should be ("Wonder Woman")
    }
 
-   test("OWN test: Initialization order") {
+   test("~Mine~ Initialization order") {
      class SomeClass (message: String) {
        println("Class initialization")
 

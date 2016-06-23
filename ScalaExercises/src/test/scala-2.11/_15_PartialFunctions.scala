@@ -5,6 +5,15 @@ import org.scalatest.{FunSuite, Matchers}
   */
 class _15_PartialFunctions extends FunSuite with Matchers {
 
+  /* ~Mine~ A partial function is a function that is only defined for a subset of it's input. | A
+     They come from maths: http://en.wikipedia.org/wiki/Partial_function                      |   \---> 1
+     For instance, sqrt(x) is only defined for x >= 0 and it's not defined for x < 0.         | B ----> 2
+     def /(divident: Int, divisor: Int) is only for divisor != 0.                             |      -> 3
+     Therefore, sqrt(x) and /(a, b) can be defined as a PartFunctions.                        | C-x / (not defined on C)
+     They will not operate on non defined ranges and therefore won't crash on them.           |    /
+     source: http://blog.bruchez.name/2011/10/scala-partial-functions-without-phd.html        | D /
+  */
+
   /* A partial function is a 'trait' that when implemented can be used as building blocks to determine a solution */
 
    test("The trait PartialFunction requires that the method 'isDefinedAt' and 'apply' be implemented.") {
